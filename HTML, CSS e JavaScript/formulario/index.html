@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+        <fieldset>
+            <legend>Dados do interessado:</legend>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="nome"><br><br>
+
+            <label for="data">Data de nascimento:</label>
+            <input id="data" type="date" name="data_nascimento"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" name="email"><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input id="telefone" type="tel" name="telefone"><br><br>
+
+            <label for="possui_veiculo">Já possui algum veículo?</label>
+            <input type="radio" id="sim" name="possui_veiculo" value="Sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="possui_veiculo" value="Não">
+            <label for="nao">Não</label><br><br>
+
+            <label for="estado_residencia">Estado de residência:</label>
+            <input id="estado_residencia" name="estado_residencia" type="text" value="MG" maxlength="2"><br><br>
+
+            <label for="fabricantes">Fabricantes de veículos que a pessoa já conhece:</label>
+            <select name="fabricantes" id="fabricantes">
+                <option value="volks">Volkswagen</option>
+                <option value="fiat">Fiat</option>
+                <option value="ford">Ford</option>
+                <option value="renault">Renault</option>
+                <option value="jeep">Jeep</option>
+            </select><br><br>
+
+            <label for="modelo_preferido">Modelo existente no mercado preferido:</label>
+            <input type="radio" id="palio" name="modelo_preferido" value="Palio">
+            <label for="palio">Palio</label>
+            <input type="radio" id="h20" name="modelo_preferido" value="H20">
+            <label for="h20">H20</label>
+            <input type="radio" id="polo" name="modelo_preferido" value="Polo">
+            <label for="polo">Polo</label>
+            <input type="radio" id="outro" name="modelo_preferido" value="Outro">
+            <label for="outro">Outro</label><br><br>
+
+            <label for="modelo_interessado">Veículo interessado:</label><br>
+
+            <label for="faixa_preco">Faixa de preço:</label>
+            <input type="range" id="faixa_preco" name="faixa_preco" min="10000" max="500000" step="50000"><br><br>
+
+            <label for="cor_preferencial">Cor Preferencial:</label>
+            <input type="color" id="cor_preferencial" name="cor_preferencial"><br><br>
+
+            <label for="observacoes_gerais">Observações gerais:</label><br>
+            <textarea id="observacoes_gerais" name="observacoes_gerais" cols="50" rows="5"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </form>
+</body>
+
+</html>

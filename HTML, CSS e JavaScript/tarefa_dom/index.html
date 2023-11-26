@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudança de cor</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="corCaixa">
+    <label for="vermelho">Vermelho: <span id="vermelhoValor">0</span></label>
+    <input type="range" id="vermelho" min="0" max="255" value="164" onchange="mudarCor()">
+
+    <label for="verde">Verde: <span id="verdeValor">0</span></label>
+    <input type="range" id="verde" min="0" max="255" value="39" onchange="mudarCor()">
+
+    <label for="azul">Azul: <span id="azulValor">0</span></label>
+    <input type="range" id="azul" min="0" max="255" value="121" onchange="mudarCor()">
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>

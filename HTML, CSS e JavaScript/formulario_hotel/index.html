@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Hotel</title>
+</head>
+
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+        <fieldset>
+            <legend>Formulário</legend>
+
+            <label for="nome_completo">Nome:</label>
+            <input type="text" name="nome_completo" id="nome_completo">
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="telefone">Número de telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <br><br>
+
+            <label for="checkIn">Data de check-in:</label>
+            <input type="date" name="checkIn" id="checkIn">
+            <br><br>
+
+            <label for="checkOut">Data de check-out</label>
+            <input type="date" name="checkOut" id="checkOut">
+            <br><br>
+
+            <label for="adultos">Número de adultos:</label>
+            <input type="number" name="adultos" id="adultos" min="1">
+            <br><br>
+
+            <label for="criancas">Número de crianças:</label>
+            <input type="number" name="criancas" id="criancas" min="0">
+            <br><br>
+
+            <label for="quarto">Tipo de quarto:</label>
+            <select name="quarto" id="quarto">
+                <option value="simples">Simples</option>
+                <option value="duplo">Duplo</option>
+                <option value="suite">Suíte</option>
+            </select>
+            <br><br>
+
+            <label for="comentarios">Solicitações especiais ou comentários:</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            <br><br>
+            <input type="submit" value="Finalizar">
+            <input type="reset" value="Reiniciar">
+        </fieldset>
+    </form>
+</body>
+
+</html>

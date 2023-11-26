@@ -1,0 +1,9 @@
+header{
+display: flex;
+justify-content: center;
+}
+
+.imagem-cabecalho{
+width: 90px;
+height: 90px;
+}

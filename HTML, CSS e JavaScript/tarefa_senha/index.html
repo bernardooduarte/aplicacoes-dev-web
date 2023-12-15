@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de senha</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Validação de senha</h1>
+
+    <label for="senha">Senha:</label>
+    <input type="text" name="senha" id="senha" onkeyup="validarSenha()"><br>
+
+    <label for="senha_confirmada">Confirmar senha:</label>
+    <input type="text" name="senha_confirmada" id="senha_confirmada" onkeyup="validarSenha()"><br>
+
+    <p id="pParagrafo"></p>
+
+    <div id="barra" style="position:relative; top: -10px;">
+        <p id="sParagrafo"></p>
+    </div>
+
+</body>
+
+</html>

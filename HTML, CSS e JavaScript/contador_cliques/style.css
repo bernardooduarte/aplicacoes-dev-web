@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color:lightblue;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+button{
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: antiquewhite;
+    transition: background-color 500ms, color 500ms;
+}
+
+button:hover{
+    background-color: rgb(255, 140, 0);
+    color: white;
+    transition: 500ms;
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto&display=swap');
 
-.div-form{
+.div-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,48 +8,49 @@
     margin: 0;
 }
 
-form{
+form {
     background-color: antiquewhite;
     border: solid black 1px;
 }
 
-form > div{
+form>div {
     padding: 1em;
 }
 
-h1{
+h1 {
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: center;
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
-label{
+label {
     font-size: 14px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.input-dados{
+.input-dados {
     border: none;
     padding: 5px;
     transition: background-color, padding 300ms;
 }
 
-textarea{
+textarea {
     margin-top: 1vh;
     transition: background-color, padding 300ms;
     border: none;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     font-size: 12px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 4px;
 }
 
-.input-dados:hover, textarea:hover{
+.input-dados:hover,
+textarea:hover {
     border: 1px solid black;
     padding: 10px;
     transition: 300ms;
@@ -57,7 +58,7 @@ textarea::placeholder{
 }
 
 
-.div-botoes{
+.div-botoes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,12 +69,13 @@ button {
     padding: 10px;
     border: none;
     border-radius: 1vh;
-    font-family:'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    ;
     background-color: #ecd0ab;
     transition: background-color, border, padding 300ms;
 }
 
-button:hover{
+button:hover {
     padding: 15px;
     background-color: rgb(245, 221, 191);
     border: 1px solid black;

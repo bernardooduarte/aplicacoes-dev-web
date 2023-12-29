@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Outfit:wght@700&family=Roboto&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    height: 100vh;
+    background-color: darkslateblue;
+}
+
+.div-autenticacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(154, 207, 243);
+}
+
+label {
+    font-family: 'Outfit', sans-serif;
+    margin-right: 0.3em;
+}
+
+input[type=text],
+input[type=password] {
+    border: none;
+    padding: 5px;
+    transition: padding 300ms, background-color 300ms;
+}
+
+input[type=text]:hover,
+input[type=password]:hover {
+    padding: 10px;
+    background-color: thistle;
+    transition: 300ms;
+}
+
+.div-usuario {
+    margin-bottom: 0.5em;
+}
+
+.div-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=submit] {
+    margin-top: 1em;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif;
+    border: none;
+    background-color: lavender;
+    transition: color 300ms, padding 300ms, background-color 300ms, border-radius 300ms;
+}
+
+input[type=submit]:hover {
+    color: white;
+    padding: 15px;
+    background-color: rgb(112, 112, 255);
+    border-radius: 1em;
+    transition: 300ms;
+}

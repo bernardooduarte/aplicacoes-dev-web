@@ -70,7 +70,6 @@ button {
     border: none;
     border-radius: 1vh;
     font-family: 'Poppins', sans-serif;
-    ;
     background-color: #ecd0ab;
     transition: background-color, border, padding 300ms;
 }

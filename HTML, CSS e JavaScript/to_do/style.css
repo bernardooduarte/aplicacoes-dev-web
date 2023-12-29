@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.div-lista {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: rgba(255, 251, 0, 0.089);
+    padding: 2vh;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+
+input[type=text] {
+    border: 1px solid black;
+    padding: 5px;
+    transition: background-color 300ms, padding 300ms;
+}
+
+input[type=text]:hover {
+    border: 1px solid black;
+    padding: 10px;
+    transition: 300ms;
+    background-color: rgb(253, 255, 134);
+}
+
+input[type=submit] {
+    margin-top: 2vh;
+    padding: 8px;
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 1vh;
+    transition: color 300ms, background-color 300ms;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(142, 199, 201);
+    color: black;
+    transition: 300ms;
+}
+
+.tarefas-adicionadas {
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    flex-direction: column;
+    background-color: rgba(255, 251, 0, 0.089);
+    padding: 2vh;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 1vh;
+    transition: background-color 300ms, padding 300ms;
+}
+
+li:hover {
+    background-color: rgb(253, 255, 134);
+    padding: 10px;
+    transition: 300ms;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.material-symbols-outlined:hover {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 30;
+    transition: 300ms;
+}

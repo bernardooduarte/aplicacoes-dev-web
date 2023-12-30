@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="organizarContainer()">
+    <div class="div-body">
+        <h1>Conversor de Unidades</h1>
+        <select name="unidades" id="unidades" onchange="organizarContainer()">
+            <option value="c_f" selected>Celsius para Fahrenheit</option>
+            <option value="kmh_ms">km/h para m/s</option>
+        </select>
+        <div class="container-conversores">
+            <div class="c-f" id="c_f">
+                <input type="text" name="celsius" id="celsius" placeholder="5.4" onkeyup="c_f(event)">
+                <label for="celsius">°C</label>
+                <input type="text" name="fahrenheit" id="fahrenheit" placeholder="41.7" onkeyup="f_c(event)">
+                <label for="celsius">°F</label>
+            </div>
+            <div class="kmh-ms" id="kmh_ms">
+                <input type="text" name="kmh" id="kmh" onkeyup="kmh_ms(event)" placeholder="100">
+                <label for="kmh">km/h</label>
+                <input type="text" name="ms" id="ms" onkeyup="ms_kmh(event)" placeholder="27.78">
+                <label for="ms">m/s</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

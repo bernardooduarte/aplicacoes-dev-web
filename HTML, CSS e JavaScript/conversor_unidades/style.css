@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(252, 104, 104);
+}
+
+.div-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+select {
+    font-family: 'Roboto', sans-serif;
+    padding: 1.5vh;
+    margin-bottom: 2vh;
+    border: none;
+}
+
+select:hover {
+    background-color: rgb(202, 202, 202);
+    transition: 300ms;
+}
+
+.container-conversores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-f,
+.kmh-ms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vh;
+    margin-bottom: 2vh;
+
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+}
+
+.c-f {
+    margin-left: 2vh;
+}
+
+.kmh-ms {
+    margin-left: 3vh;
+}
+
+input {
+    padding: 1vh;
+    width: 10vh;
+    border: none;
+    font-size: 15px;
+    transition: background-color 300ms;
+}
+
+input:hover {
+    background-color: rgb(202, 202, 202);
+    transition: 300ms;
+}

@@ -43,6 +43,7 @@ function f_c() {
 
   if (!apenasNumerosEPonto(f)) {
     alert("Por favor, insira apenas números e ponto decimal.");
+    return false;
   }
 
   c.value = formula.toFixed(1);
@@ -58,6 +59,7 @@ function kmh_ms() {
 
   if (!apenasNumerosEPonto(kmh)) {
     alert("Por favor, insira apenas números e ponto decimal.");
+    return false;
   }
 
   const formula = kmh / 3.6;
@@ -73,8 +75,9 @@ function ms_kmh() {
   const ms = document.getElementById("ms").value;
   const kmh = document.getElementById("kmh");
 
-  if (!apenasNumerosEPonto(kmh)) {
+  if (!apenasNumerosEPonto(ms)) {
     alert("Por favor, insira apenas números e ponto decimal.");
+    return false;
   }
 
   const formula = ms * 3.6;

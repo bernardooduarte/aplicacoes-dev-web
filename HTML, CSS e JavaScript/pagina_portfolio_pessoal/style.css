@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&family=Lato&family=Montserrat&family=Roboto&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border: solid 0.1px rgb(97, 97, 97);
+}
+
+main,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1vh;
+    padding: 2em;
+}
+
+.div-foto-nome-bio {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.384);
+    padding: 5vh;
+}
+
+.foto-perfil {
+    width: 10em;
+}
+
+.nome-biografia {
+    margin-left: 2em;
+}
+
+.nome-biografia>h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.nome-biografia>p {
+    font-family: 'Inter', sans-serif;
+}
+
+.div-competencias-tecnicas,
+.div-projetos {
+    background-color: rgba(255, 255, 255, 0.384);
+    flex-direction: column;
+    margin-top: 3vh;
+    padding: 5vh;
+}
+
+
+.div-titulo-comp-tec,
+.div-titulo-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-titulo-comp-tec>h2,
+.div-titulo-projetos>h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.div-titulo-linguagens>h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+.linguagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.linguagens>img {
+    width: 10vh;
+}
+
+
+.botoes-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 3vh;
+}
+
+.botoes-projetos>div {
+    display: flex;
+    gap: 3vh;
+}
+
+.botoes-projetos>div>a,
+.div-botoes-contato>a {
+    border: none;
+    padding: 2vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.137);
+    color: black;
+    transition: background-color 300ms, color 300ms;
+}
+
+.botao-c:hover {
+    background-color: #00589c;
+    color: white;
+    transition: 300ms;
+}
+
+.botao-c-sharp:hover {
+    background-color: #803789;
+    color: white;
+    transition: 300ms;
+}
+
+.div-titulo-contato>h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-botoes-contato {
+    display: flex;
+    gap: 3vh;
+}
+
+.botao-dev-web:hover {
+    background-color: #e34f26;
+    color: white;
+    transition: 300ms;
+}
+
+.botao-ts:hover {
+    background-color: #3178c6;
+    color: white;
+    transition: 300ms;
+}
+
+.botao-github:hover {
+    background-color: #171515;
+    color: white;
+    transition: 300ms;
+}
+
+.botao-linkedin:hover {
+    background-color: #0077b7;
+    color: white;
+    transition: 300ms;
+}
+
+.botao-email:hover {
+    background-color: #ea4335;
+    color: white;
+    transition: 300ms;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(240, 74, 74);
+}
+
+.div-contador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vh;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+label, p{
+    font-family: 'Roboto';
+    color: white;
+}
+
+label{
+    margin-bottom: 1em;
+}
+
+textarea{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    transition: padding 300ms;
+}
+
+textarea:hover{
+    padding: 20px;
+    transition: 300ms;
+}

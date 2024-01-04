@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(173, 173, 173);
+}
+
+
+h1,
+h2 {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.div-input,
+section {
+    margin-top: 1vh;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.div-input {
+    padding: 2em;
+}
+
+section {
+    display: flex;
+    padding: 1em;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    margin-right: 2px;
+}
+
+.div-botao {
+    margin-top: 1em;
+}
+
+button {
+    padding: 0.5em;
+}

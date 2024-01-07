@@ -1,13 +1,29 @@
+body{
+    background-color: antiquewhite;
+}
+
 header{
     display: flex;
     flex-direction: row;
     gap: 1em;
     justify-content: space-around;
+    align-items: center;
 }
+
 
 .div-saudacao{
     flex-direction: column;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2em;
+}
+
 
 .div-form-cadastro{
     display: flex;
@@ -15,7 +31,6 @@ header{
     align-items: center;
     justify-content: center;
     gap: 1em;
-    height: 50vh;
 }
 
 .div-titulo-cadastro{
@@ -26,4 +41,15 @@ header{
 .div-botao{
     align-items: center;
     justify-content: center;
+}
+
+.div-opcoes{
+    gap: 3em;
+}
+
+.div-deposito, .div-saque{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
 }

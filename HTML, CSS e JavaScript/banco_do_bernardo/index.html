@@ -21,30 +21,56 @@
     </header>
     <main>
         <div id="cadastro" class="div-form-cadastro">
-                <div class="div-titulo-cadastro">
-                   <h2>Cadastro</h2>  
-                </div>
-                <div class="div-nome">
-                    <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Primeiro nome">
-                </div>
-                <div class="div-sobrenome">
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-                </div>
-                <div class="div-email">
-                    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
-                </div>
-                <div class="div-senha">
-                    <input type="password" name="senha" id="senha" placeholder="Senha">
-                </div>
-                <div class="div-confirmar-senha">
-                    <input type="password" name="senha_confirmada" id="senha_confirmada" placeholder="Confirmar senha">
-                </div>
-                <div class="div-botao">
-                    <button onclick="return validarCadastro()" class="botao-cadastrar">Cadastrar</button>
-                </div>
+            <div class="div-titulo-cadastro">
+                <h2>Cadastro</h2>
+            </div>
+            <div class="div-nome">
+                <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Primeiro nome">
+            </div>
+            <div class="div-sobrenome">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+            </div>
+            <div class="div-email">
+                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+            </div>
+            <div class="div-senha">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+            </div>
+            <div class="div-confirmar-senha">
+                <input type="password" name="senha_confirmada" id="senha_confirmada" placeholder="Confirmar senha">
+            </div>
+            <div class="div-botao">
+                <button onclick="return validarCadastro()" class="botao-cadastrar">Cadastrar</button>
+            </div>
         </div>
 
-        <div>
+        <div id="opcoes" class="div-opcoes">
+            <button onclick="deposito()">Depósito</button>
+            <button onclick="saque()">Saque</button>
+        </div>
+
+        <div id="deposito" class="div-deposito">
+            <div class="div-input-deposito">
+                <label for="valor_deposito">R$:</label>
+                <input type="number" min="0.01" name="valor_deposito" id="valor_deposito" placeholder="0,01">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+            </div>
+            <div class="div-botao-funcao">
+                <button onclick="voltar()">Voltar</button>
+                <button class="botao-funcao" onclick="depositar()">Depositar</button>
+            </div>
+        </div>
+
+        <div id="saque" class="div-saque">
+            <div class="div-input-saque">
+                <label for="valor_saque">R$:</label>
+                <input type="number" min="0.01" name="valor_saque" id="valor_saque" placeholder="0,01">
+                <input type="password" name="senha_transacao" id="senha_transacao" placeholder="Senha">
+            </div>
+            <div class="div-botao-funcao">
+                <button onclick="voltar()">Voltar</button>
+                <button class="botao-funcao" onclick="sacar()">Sacar</button>
+            </div>
         </div>
     </main>
 </body>

@@ -1,0 +1,10 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 1cm;
+}
+
+#container>p {
+    border: 5px solid #ff0000;
+    padding: 10px;
+}

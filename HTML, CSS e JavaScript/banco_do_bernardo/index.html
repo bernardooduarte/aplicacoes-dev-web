@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco do Bernardo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="abrirPagina()">
+    <header>
+        <div class="div-titulo">
+            <h1>Banco do Bernardo</h1>
+        </div>
+        <div id="saudacao" class="div-saudacao">
+            <p>Olá, <span id="primeiro_nome_span"></span></p>
+            <p>Saldo: R$ <span id="saldo"></span></p>
+        </div>
+    </header>
+    <main>
+        <div id="cadastro" class="div-form-cadastro">
+                <div class="div-titulo-cadastro">
+                   <h2>Cadastro</h2>  
+                </div>
+                <div class="div-nome">
+                    <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Primeiro nome">
+                </div>
+                <div class="div-sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                </div>
+                <div class="div-email">
+                    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+                </div>
+                <div class="div-senha">
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                </div>
+                <div class="div-confirmar-senha">
+                    <input type="password" name="senha_confirmada" id="senha_confirmada" placeholder="Confirmar senha">
+                </div>
+                <div class="div-botao">
+                    <button onclick="return validarCadastro()" class="botao-cadastrar">Cadastrar</button>
+                </div>
+        </div>
+
+        <div>
+        </div>
+    </main>
+</body>
+
+</html>

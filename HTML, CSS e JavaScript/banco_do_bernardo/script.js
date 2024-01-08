@@ -1,4 +1,6 @@
 let div_saudacao;
+let div_logout;
+let div_cadastro;
 let primeiro_nome;
 var saldo = 0.0;
 let saldo_saudacao;
@@ -10,6 +12,9 @@ let div_saque;
 function abrirPagina() {
   div_saudacao = document.getElementById("saudacao");
   div_saudacao.style.display = "none";
+
+  div_logout = document.getElementById("logout");
+  div_logout.style.display = "none";
 
   div_opcoes = document.getElementById("opcoes");
   div_opcoes.style.display = "none";
@@ -62,7 +67,7 @@ function validarSenha(senha, senha_confirmada) {
 }
 
 function iniciarBanco() {
-  let div_cadastro = document.getElementById("cadastro");
+  div_cadastro = document.getElementById("cadastro");
   div_cadastro.style.display = "none";
 
   div_saudacao.style.display = "flex";
@@ -73,7 +78,23 @@ function iniciarBanco() {
   saldo_saudacao = document.getElementById("saldo");
   saldo_saudacao.innerHTML = saldo.toFixed(2).replace(".", ",");
 
+  div_logout.style.display = "flex";
+
   div_opcoes.style.display = "flex";
+
+}
+
+function logout() {
+  div_cadastro = document.getElementById("cadastro");
+  div_cadastro.style.display = "flex";
+
+  div_saudacao.style.display = "none";
+  div_logout.style.display = "none";
+  div_opcoes.style.display = "none";
+  div_deposito.style.display = "none";
+  div_saque.style.display = "none";
+  
+  limparCadastro();
 }
 
 function deposito() {
@@ -92,14 +113,17 @@ function voltar() {
   div_opcoes.style.display = "flex";
 }
 
-
-//corrigir senha_transacao depois
-
 function depositar() {
+  let senha_transacao_deposito = document.getElementById(
+    "senha_transacao_deposito"
+  ).value;
 
-  let senha_transacao = document.getElementById("senha_transacao").value;
+  if (senha_transacao_deposito == "") {
+    alert("Por favor, inserir a senha!");
+    return;
+  }
 
-  if (senha_transacao != senha) {
+  if (senha_transacao_deposito != senha) {
     alert("Senha incorreta!");
     return;
   }
@@ -112,13 +136,21 @@ function depositar() {
   saldo_saudacao.innerText = saldo.toFixed(2).replace(".", ",");
 
   alert("Valor depositado com sucesso!");
+
+  limparTransacao();
 }
 
 function sacar() {
+  let senha_transacao_saque = document.getElementById(
+    "senha_transacao_saque"
+  ).value;
 
-  let senha_transacao = document.getElementById("senha_transacao").value;
+  if (senha_transacao_saque == "") {
+    alert("Por favor, inserir a senha!");
+    return;
+  }
 
-  if (senha_transacao != senha) {
+  if (senha_transacao_saque != senha) {
     alert("Senha incorreta!");
     return;
   }
@@ -134,4 +166,22 @@ function sacar() {
   saldo_saudacao.innerText = saldo.toFixed(2).replace(".", ",");
 
   alert("Valor sacado com sucesso!");
+
+  limparTransacao();
+}
+
+
+function limparTransacao() {
+  document.getElementById("valor_deposito").value = "";
+  document.getElementById("valor_saque").value = "";
+  document.getElementById("senha_transacao_deposito").value = "";
+  document.getElementById("senha_transacao_saque").value = "";
+}
+
+function limparCadastro() {
+  document.getElementById("primeiro_nome").value = "";
+  document.getElementById("sobrenome").value = "";
+  document.getElementById("e-mail").value = "";
+  document.getElementById("senha").value = "";
+  document.getElementById("senha_confirmada").value = "";
 }

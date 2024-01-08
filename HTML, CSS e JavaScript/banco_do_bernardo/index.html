@@ -18,6 +18,9 @@
             <p>Olá, <span id="primeiro_nome_span"></span></p>
             <p>Saldo: R$ <span id="saldo"></span></p>
         </div>
+        <div id="logout" class="div_logout">
+            <button onclick="logout()">Sair</button>
+        </div>
     </header>
     <main>
         <div id="cadastro" class="div-form-cadastro">
@@ -51,9 +54,11 @@
 
         <div id="deposito" class="div-deposito">
             <div class="div-input-deposito">
-                <label for="valor_deposito">R$:</label>
                 <input type="number" min="0.01" name="valor_deposito" id="valor_deposito" placeholder="0,01">
-                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <div class="div-input-senha-transacao">
+                    <input type="password" name="senha_transacao_deposito" id="senha_transacao_deposito"
+                        placeholder="Senha">
+                </div>
             </div>
             <div class="div-botao-funcao">
                 <button onclick="voltar()">Voltar</button>
@@ -63,9 +68,10 @@
 
         <div id="saque" class="div-saque">
             <div class="div-input-saque">
-                <label for="valor_saque">R$:</label>
                 <input type="number" min="0.01" name="valor_saque" id="valor_saque" placeholder="0,01">
-                <input type="password" name="senha_transacao" id="senha_transacao" placeholder="Senha">
+                <div class="div-input-senha-transacao">
+                    <input type="password" name="senha_transacao_saque" id="senha_transacao_saque" placeholder="Senha">
+                </div>
             </div>
             <div class="div-botao-funcao">
                 <button onclick="voltar()">Voltar</button>

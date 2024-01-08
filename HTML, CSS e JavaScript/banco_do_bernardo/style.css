@@ -24,6 +24,20 @@ main{
     gap: 2em;
 }
 
+input{
+    padding: 1em;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+button{
+    padding: 2em;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.486);
+    color: black;
+}
+
 
 .div-form-cadastro{
     display: flex;
@@ -31,6 +45,9 @@ main{
     align-items: center;
     justify-content: center;
     gap: 1em;
+    background-color: rgba(0, 0, 0, 0.11);
+    padding: 2em;
+    width: 80vh;
 }
 
 .div-titulo-cadastro{
@@ -44,12 +61,26 @@ main{
 }
 
 .div-opcoes{
-    gap: 3em;
+    display: flex;
+    gap: 2em;
 }
 
 .div-deposito, .div-saque{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    gap: 1em;
+    background-color: rgba(0, 0, 0, 0.11);
+    padding: 2em;
+}
+
+.div-input-deposito, .div-input-saque{
+    display: flex;
+    gap: 1em;
+}
+
+.div-botao-funcao{
+    display: flex;
     gap: 1em;
 }

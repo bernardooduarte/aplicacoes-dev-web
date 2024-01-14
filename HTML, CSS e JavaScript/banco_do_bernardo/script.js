@@ -119,7 +119,7 @@ function depositar() {
 
   if (valor_depositado < 0.01) {
     alert("Por favor, inserir um valor maior ou igual a R$0,01!");
-    limparTransacao()
+    limparTransacao();
     return;
   }
 

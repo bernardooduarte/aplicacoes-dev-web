@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Roboto&family=Roboto+Condensed&display=swap');
 
-body{
+body {
     background-color: antiquewhite;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -13,14 +13,14 @@ header{
     margin-top: 5vh;
 }
 
-.div-titulo > h1 {
+.div-titulo>h1 {
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-size: 2em;
 }
 
 
-.div-saudacao{
+.div-saudacao {
     flex-direction: column;
 }
 
@@ -29,7 +29,7 @@ header{
     color: black;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@ main{
     gap: 2em;
 }
 
-input{
+input {
     padding: 1em;
     border: none;
     background-color: white;
@@ -52,7 +52,7 @@ input:hover {
     transition: 300ms;
 }
 
-button{
+button {
     padding: 2em;
     border: none;
     background-color: rgba(255, 255, 255, 0.486);
@@ -61,14 +61,14 @@ button{
     transition: background-color 300ms, padding 300ms;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(255, 255, 255, 0.788);
     padding: 2.5em;
     transition: 300ms;
 }
 
 
-.div-form-cadastro{
+.div-form-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,27 +79,28 @@ button:hover{
     width: 80vh;
 }
 
-.div-titulo-cadastro{
+.div-titulo-cadastro {
     align-items: center;
     justify-content: center;
 }
 
-.div-titulo-cadastro > h2{
+.div-titulo-cadastro>h2 {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 
-.div-botao{
+.div-botao {
     align-items: center;
     justify-content: center;
 }
 
-.div-opcoes{
+.div-opcoes {
     display: flex;
     gap: 2em;
 }
 
-.div-deposito, .div-saque{
+.div-deposito,
+.div-saque {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,12 +110,13 @@ button:hover{
     padding: 2em;
 }
 
-.div-input-deposito, .div-input-saque{
+.div-input-deposito,
+.div-input-saque {
     display: flex;
     gap: 1em;
 }
 
-.div-botao-funcao{
+.div-botao-funcao {
     display: flex;
     gap: 1em;
 }

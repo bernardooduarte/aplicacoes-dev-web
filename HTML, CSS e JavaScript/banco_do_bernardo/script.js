@@ -81,7 +81,6 @@ function iniciarBanco() {
   div_logout.style.display = "flex";
 
   div_opcoes.style.display = "flex";
-
 }
 
 function logout() {
@@ -93,7 +92,7 @@ function logout() {
   div_opcoes.style.display = "none";
   div_deposito.style.display = "none";
   div_saque.style.display = "none";
-  
+
   limparCadastro();
 }
 
@@ -114,6 +113,16 @@ function voltar() {
 }
 
 function depositar() {
+  var valor_depositado = parseFloat(
+    document.getElementById("valor_deposito").value
+  );
+
+  if (valor_depositado < 0.01) {
+    alert("Por favor, inserir um valor maior ou igual a R$0,01!");
+    limparTransacao()
+    return;
+  }
+
   let senha_transacao_deposito = document.getElementById(
     "senha_transacao_deposito"
   ).value;
@@ -128,10 +137,6 @@ function depositar() {
     return;
   }
 
-  var valor_depositado = parseFloat(
-    document.getElementById("valor_deposito").value
-  );
-
   saldo += valor_depositado;
   saldo_saudacao.innerText = saldo.toFixed(2).replace(".", ",");
 
@@ -141,6 +146,14 @@ function depositar() {
 }
 
 function sacar() {
+  var valor_sacado = parseFloat(document.getElementById("valor_saque").value);
+
+  if (valor_sacado < 0.01) {
+    alert("Por favor, inserir um valor maior ou igual a R$0,01!");
+    limparTransacao();
+    return;
+  }
+
   let senha_transacao_saque = document.getElementById(
     "senha_transacao_saque"
   ).value;
@@ -155,8 +168,6 @@ function sacar() {
     return;
   }
 
-  var valor_sacado = parseFloat(document.getElementById("valor_saque").value);
-
   if (valor_sacado > saldo) {
     alert("Saldo insuficiente!");
     return;
@@ -169,7 +180,6 @@ function sacar() {
 
   limparTransacao();
 }
-
 
 function limparTransacao() {
   document.getElementById("valor_deposito").value = "";

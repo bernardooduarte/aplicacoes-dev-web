@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Roboto&family=Roboto+Condensed&display=swap');
+
 body{
     background-color: antiquewhite;
 }
@@ -8,11 +10,23 @@ header{
     gap: 1em;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5vh;
+}
+
+.div-titulo > h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 2em;
 }
 
 
 .div-saudacao{
     flex-direction: column;
+}
+
+.div-saudacao p {
+    font-family: 'Inter', sans-serif;
+    color: black;
 }
 
 main{
@@ -28,14 +42,29 @@ input{
     padding: 1em;
     border: none;
     background-color: white;
+    font-family: 'Inter', sans-serif;
     color: black;
+    transition: padding 300ms;
+}
+
+input:hover {
+    padding: 1.5em;
+    transition: 300ms;
 }
 
 button{
     padding: 2em;
     border: none;
     background-color: rgba(255, 255, 255, 0.486);
+    font-family: 'Roboto Condensed', sans-serif;
     color: black;
+    transition: background-color 300ms, padding 300ms;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 2.5em;
+    transition: 300ms;
 }
 
 
@@ -53,6 +82,11 @@ button{
 .div-titulo-cadastro{
     align-items: center;
     justify-content: center;
+}
+
+.div-titulo-cadastro > h2{
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 .div-botao{

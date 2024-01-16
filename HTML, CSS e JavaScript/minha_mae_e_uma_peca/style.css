@@ -24,7 +24,7 @@
     background: var(--rosa);
 }
 
-body{
+body {
     background-color: var(--azul);
 }
 
@@ -85,7 +85,7 @@ p {
     margin-top: 2vh;
 }
 
-.div-titulo-elenco{
+.div-titulo-elenco {
     justify-content: center;
     margin-bottom: 4vh;
 }

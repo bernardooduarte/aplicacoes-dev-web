@@ -1,0 +1,125 @@
+@import url('https://fonts.cdnfonts.com/css/rex-bold');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --verde: #8BBF46;
+    --azul: #7EC6BE;
+    --amarelo: #FDC810;
+    --laranja: #F29137;
+    --rosa: #EF849C;
+}
+
+
+.div-menu {
+    display: block;
+}
+
+.botao-menu {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: var(--rosa);
+}
+
+body{
+    background-color: var(--azul);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header>img,
+.div-cartaz>img {
+    width: 200px;
+}
+
+main {
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+h1 {
+    font-family: 'Rex Bold', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.div-linha-1,
+.div-linha-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 5vh;
+    background-color: #8bbf463b;
+}
+
+
+.div-sinopse>img {
+    width: 80px;
+}
+
+.div-informacoes>p>span {
+    font-weight: bold;
+}
+
+.div-linha-2 {
+    text-align: center;
+}
+
+.div-elenco {
+    margin-top: 2vh;
+}
+
+.div-titulo-elenco{
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.linha-1-elenco,
+.linha-2-elenco,
+.linha-3-elenco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+
+.linha-1-elenco {
+    margin-bottom: 2vh;
+}
+
+.linha-1-elenco>div>h2,
+.linha-2-elenco>div>h2 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.linha-1-elenco>div>h3,
+.linha-2-elenco>div>h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
+.linha-1-elenco>div>img,
+.linha-2-elenco>div>img {
+    width: 120px;
+}

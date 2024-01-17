@@ -7,17 +7,19 @@
     <title>Minha Mãe é uma Peça</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header>
-        <img src="img/logo-filme.png" alt="logo-filme">
+        <img src="src/img/logo-filme.png" alt="logo-filme">
     </header>
     <hr>
     <main>
         <div class="div-linha-1">
             <div class="div-cartaz">
-                <img src="img/cartaz-filme.jpg" alt="cartaz-filme">
+                <img src="src/img/cartaz-filme.jpg" alt="cartaz-filme">
             </div>
             <div class="div-sinopse">
                 <h1>Sinopse</h1>
@@ -30,7 +32,8 @@
                     Mal sabem eles que a mãe foi visitar a querida tia Zélia (Sueli Franco) para desabafar com ela <br>
                     suas tristezas do presente e recordar os bons tempos do passado.
                 </p>
-                <img src="img/classificacao-12.webp" alt="classificacao-12">
+                <img src="src/img/classificacao-12.webp" alt="classificacao-12">
+                <p>Não recomendado para menores de 12 anos</p>
             </div>
             <div class="div-informacoes">
                 <h1>Informações do filme</h1>
@@ -42,60 +45,93 @@
             </div>
         </div>
         <hr>
-        <div>
-            <div class="div-linha-2">
-                <div class="div-elenco">
-                    <div class="div-titulo-elenco">
-                        <h1>
-                            Elenco principal
-                        </h1>
+        <div class="div-linha-2">
+            <div class="div-elenco">
+                <div class="div-titulo-elenco">
+                    <h1>
+                        Elenco principal
+                    </h1>
+                </div>
+                <div class="linha-1-elenco">
+                    <div>
+                        <img src="src/img/paulo-gustavo.jpg" alt="paulo-gustavo">
+                        <h2>Paulo Gustavo</h2>
+                        <h3>(Dona Hermínia)</h3>
                     </div>
-                    <div class="linha-1-elenco">
-                        <div><img src="img/paulo-gustavo.jpg" alt="paulo-gustavo">
-                            <h2>Paulo Gustavo</h2>
-                            <h3>(Dona Hermínia)</h3>
-                        </div>
-                        <div><img src="img/ingrid-guimaraes.webp" alt="ingrid-guimaraes">
-                            <h2>Ingrid Guimarães</h2>
-                            <h3>(Soraia)</h3>
-                        </div>
-                        <div>
-                            <img src="img/herson-capri.jpg" alt="herson-capri">
-                            <h2>Herson Capri</h2>
-                            <h3>(Carlos Alberto)</h3>
-                        </div>
-                        <div>
-                            <img src="img/mariana-xavier.webp" alt="mariana-xavier">
-                            <h2>Mariana Xavier</h2>
-                            <h3>(Marcelina)</h3>
-                        </div>
+                    <div>
+                        <img src="src/img/ingrid-guimaraes.webp" alt="ingrid-guimaraes">
+                        <h2>Ingrid Guimarães</h2>
+                        <h3>(Soraia)</h3>
                     </div>
-                    <div class="linha-2-elenco">
-                        <div><img src="img/monica-martelli.webp" alt="monica-martelli">
-                            <h2>Monica Martelli</h2>
-                            <h3>(Mônica)</h3>
-                        </div>
-                        <div><img src="img/alexandra-richter.webp" alt="alexandra-richter">
-                            <h2>Alexandra Richter</h2>
-                            <h3>(Iesa)</h3>
-                        </div>
-                        <div><img src="img/rodrigo-pandolfo.webp" alt="rodrigo-pandolfo">
-                            <h2>Rodrigo Pandolfo</h2>
-                            <h3>(Juliano)</h3>
-                        </div>
-                        <div><img src="img/suely-franco.webp" alt="suely-franco">
-                            <h2>Suely Franco</h2>
-                            <h3>(Tia Zélia)</h3>
-                        </div>
+                    <div>
+                        <img src="src/img/herson-capri.jpg" alt="herson-capri">
+                        <h2>Herson Capri</h2>
+                        <h3>(Carlos Alberto)</h3>
+                    </div>
+                    <div>
+                        <img src="src/img/mariana-xavier.webp" alt="mariana-xavier">
+                        <h2>Mariana Xavier</h2>
+                        <h3>(Marcelina)</h3>
+                    </div>
+                </div>
+                <div class="linha-2-elenco">
+                    <div>
+                        <img src="src/img/monica-martelli.webp" alt="monica-martelli">
+                        <h2>Monica Martelli</h2>
+                        <h3>(Mônica)</h3>
+                    </div>
+                    <div>
+                        <img src="src/img/alexandra-richter.webp" alt="alexandra-richter">
+                        <h2>Alexandra Richter</h2>
+                        <h3>(Iesa)</h3>
+                    </div>
+                    <div>
+                        <img src="src/img/rodrigo-pandolfo.webp" alt="rodrigo-pandolfo">
+                        <h2>Rodrigo Pandolfo</h2>
+                        <h3>(Juliano)</h3>
+                    </div>
+                    <div>
+                        <img src="src/img/suely-franco.webp" alt="suely-franco">
+                        <h2>Suely Franco</h2>
+                        <h3>(Tia Zélia)</h3>
                     </div>
                 </div>
             </div>
         </div>
         <hr>
+        <div class="div-linha-3">
+            <div>
+                <h1>Trailer do Filme</h1>
+            </div>
+            <div>
+                <video controls src="src/video/trailer.mp4"></video>
+            </div>
+        </div>
+        <hr>
+        <div class="div-linha-4">
+            <div>
+                <h1>Onde assistir?</h1>
+            </div>
+            <div class="div-botoes-streamings">
+                <a class="botao-netflix" href="https://www.netflix.com/watch/81380282?source=35"
+                    target="_blank">Netflix</a>
+                <a class="botao-globoplay"
+                    href="https://globoplay.globo.com/minha-mae-e-uma-peca/t/wgdGs5QCHc/?origemId=91698"
+                    target="_blank">Globoplay</a>
+                <a class="botao-amazon-prime"
+                    href="https://www.primevideo.com/dp/amzn1.dv.gti.0240a2f0-4569-4cb9-9248-1dcbb4bd17c9?autoplay=0&ref_=atv_cf_strg_wb"
+                    target="_blank">Amazon Prime</a>
+            </div>
+        </div>
     </main>
+    <hr>
 
     <div class="div-menu">
         <div class="botao-menu">
+            <!--Corrigir span menu-->
+            <span class="material-symbols-outlined">
+                menu
+            </span>
         </div>
     </div>
 </body>

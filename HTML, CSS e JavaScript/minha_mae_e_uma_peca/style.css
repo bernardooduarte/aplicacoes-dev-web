@@ -65,7 +65,8 @@ header>img,
     transition: background-color 300ms;
 }
 
-.dropbtn:hover, .dropbtn:focus{
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: rgb(88, 145, 184);
     transition: 300ms;
 }

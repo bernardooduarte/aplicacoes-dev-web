@@ -6,134 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Mãe é uma Peça</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header>
         <img src="src/img/logo-filme.png" alt="logo-filme">
+        <div class="menu-dropdown">
+            <button onclick="menu()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#sobre">Sobre</a>
+                <a href="#personagens">Personagens</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#imagens">Imagens</a>
+            </div>
+        </div>
     </header>
     <hr>
     <main>
         <div class="div-linha-1">
-            <div class="div-cartaz">
-                <img src="src/img/cartaz-filme.jpg" alt="cartaz-filme">
-            </div>
-            <div class="div-sinopse">
-                <h1>Sinopse</h1>
-                <p>Dona Hermínia (Paulo Gustavo) é uma mulher de meia idade, divorciada do marido (Herson Capri),<br>
-                    que a trocou por uma mais jovem (Ingrid Guimarães). Hiperativa, ela não larga o pé de seus filhos
-                    <br>
-                    Marcelina (Mariana Xavier) e Juliano (Rodrigo Pandolfo), sem se dar conta que eles já estão bem <br>
-                    grandinhos. Um dia, após descobrir que eles consideram ela uma chata, resolve sair de casa sem <br>
-                    avisar para ninguém, deixando todos, de alguma forma, preocupados com o que teria acontecido. <br>
-                    Mal sabem eles que a mãe foi visitar a querida tia Zélia (Sueli Franco) para desabafar com ela <br>
-                    suas tristezas do presente e recordar os bons tempos do passado.
-                </p>
-                <img src="src/img/classificacao-12.webp" alt="classificacao-12">
-                <p>Não recomendado para menores de 12 anos</p>
-            </div>
-            <div class="div-informacoes">
-                <h1>Informações do filme</h1>
-                <p>Data de lançamento: <span>21 de junho de 2013</span></p>
-                <p>Duração: <span>1h 25min</span></p>
-                <p>Categoria: <span>Comédia</span></p>
-                <p>Direção: <span>André Pellenz</span></p>
-                <p>Roteiro: <span>Paulo Gustavo e Fil Braz</span></p>
+
+            <div class="div-sobre">
+                <div id="sobre" class="div-titulo-sobre">
+                    <h1>Sobre</h1>
+                </div>
+                <div class="div-conteudo-sobre">
+                    <div class="div-cartaz">
+                        <img src="src/img/cartaz-filme.jpg" alt="cartaz-filme">
+                    </div>
+                    <div class="div-sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Dona Hermínia (Paulo Gustavo) é uma mulher de meia idade, divorciada do marido (Herson
+                            Capri),<br>
+                            que a trocou por uma mais jovem (Ingrid Guimarães). Hiperativa, ela não larga o pé de seus
+                            filhos
+                            <br>
+                            Marcelina (Mariana Xavier) e Juliano (Rodrigo Pandolfo), sem se dar conta que eles já estão
+                            bem
+                            <br>
+                            grandinhos. Um dia, após descobrir que eles consideram ela uma chata, resolve sair de casa
+                            sem
+                            <br>
+                            avisar para ninguém, deixando todos, de alguma forma, preocupados com o que teria
+                            acontecido.
+                            <br>
+                            Mal sabem eles que a mãe foi visitar a querida tia Zélia (Sueli Franco) para desabafar com
+                            ela
+                            <br>
+                            suas tristezas do presente e recordar os bons tempos do passado.
+                        </p>
+                        <img src="src/img/classificacao-12.webp" alt="classificacao-12">
+                        <p>Não recomendado para menores de 12 anos</p>
+                    </div>
+                    <div class="div-informacoes">
+                        <h2>Informações do filme</h2>
+                        <p>Data de lançamento: <span>21 de junho de 2013</span></p>
+                        <p>Duração: <span>1h 25min</span></p>
+                        <p>Categoria: <span>Comédia</span></p>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
         <div class="div-linha-2">
             <div class="div-elenco">
-                <div class="div-titulo-elenco">
+                <div id="personagens" class="div-titulo-elenco">
                     <h1>
-                        Elenco principal
+                        Personagens
                     </h1>
                 </div>
-                <div class="linha-1-elenco">
-                    <div>
-                        <img src="src/img/paulo-gustavo.jpg" alt="paulo-gustavo">
-                        <h2>Paulo Gustavo</h2>
-                        <h3>(Dona Hermínia)</h3>
+                <div class="div-conteudo-elenco">
+                    <div class="linha-1-elenco">
+                        <div>
+                            <img src="src/img/paulo-gustavo.jpg" alt="paulo-gustavo">
+                            <h2>Paulo Gustavo</h2>
+                            <h3>(Dona Hermínia)</h3>
+                        </div>
+                        <div>
+                            <img src="src/img/ingrid-guimaraes.webp" alt="ingrid-guimaraes">
+                            <h2>Ingrid Guimarães</h2>
+                            <h3>(Soraia)</h3>
+                        </div>
+                        <div>
+                            <img src="src/img/herson-capri.jpg" alt="herson-capri">
+                            <h2>Herson Capri</h2>
+                            <h3>(Carlos Alberto)</h3>
+                        </div>
+                        <div>
+                            <img src="src/img/mariana-xavier.webp" alt="mariana-xavier">
+                            <h2>Mariana Xavier</h2>
+                            <h3>(Marcelina)</h3>
+                        </div>
                     </div>
-                    <div>
-                        <img src="src/img/ingrid-guimaraes.webp" alt="ingrid-guimaraes">
-                        <h2>Ingrid Guimarães</h2>
-                        <h3>(Soraia)</h3>
-                    </div>
-                    <div>
-                        <img src="src/img/herson-capri.jpg" alt="herson-capri">
-                        <h2>Herson Capri</h2>
-                        <h3>(Carlos Alberto)</h3>
-                    </div>
-                    <div>
-                        <img src="src/img/mariana-xavier.webp" alt="mariana-xavier">
-                        <h2>Mariana Xavier</h2>
-                        <h3>(Marcelina)</h3>
-                    </div>
-                </div>
-                <div class="linha-2-elenco">
-                    <div>
-                        <img src="src/img/monica-martelli.webp" alt="monica-martelli">
-                        <h2>Monica Martelli</h2>
-                        <h3>(Mônica)</h3>
-                    </div>
-                    <div>
-                        <img src="src/img/alexandra-richter.webp" alt="alexandra-richter">
-                        <h2>Alexandra Richter</h2>
-                        <h3>(Iesa)</h3>
-                    </div>
-                    <div>
-                        <img src="src/img/rodrigo-pandolfo.webp" alt="rodrigo-pandolfo">
-                        <h2>Rodrigo Pandolfo</h2>
-                        <h3>(Juliano)</h3>
-                    </div>
-                    <div>
-                        <img src="src/img/suely-franco.webp" alt="suely-franco">
-                        <h2>Suely Franco</h2>
-                        <h3>(Tia Zélia)</h3>
+                    <div class="linha-2-elenco">
+                        <div>
+                            <img src="src/img/monica-martelli.webp" alt="monica-martelli">
+                            <h2>Monica Martelli</h2>
+                            <h3>(Mônica)</h3>
+                        </div>
+                        <div>
+                            <img src="src/img/alexandra-richter.webp" alt="alexandra-richter">
+                            <h2>Alexandra Richter</h2>
+                            <h3>(Iesa)</h3>
+                        </div>
+                        <div>
+                            <img src="src/img/rodrigo-pandolfo.webp" alt="rodrigo-pandolfo">
+                            <h2>Rodrigo Pandolfo</h2>
+                            <h3>(Juliano)</h3>
+                        </div>
+                        <div>
+                            <img src="src/img/suely-franco.webp" alt="suely-franco">
+                            <h2>Suely Franco</h2>
+                            <h3>(Tia Zélia)</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
         <hr>
         <div class="div-linha-3">
-            <div>
-                <h1>Trailer do Filme</h1>
-            </div>
-            <div>
-                <video controls src="src/video/trailer.mp4"></video>
+            <div id="equipe" class="div-equipe">
+                <div class="div-titulo-equipe">
+                    <h1>Equipe</h1>
+                </div>
+                <div class="div-conteudo-equipe">
+                    <div class="div-equipe-direcao">
+                        <h2>Direção</h2>
+                        <img src="src/img/andre-pellenz.webp" alt="andre-pellenz">
+                        <p>André Pellenz</p>
+                    </div>
+                    <div class="div-equipe-roteiro">
+                        <h2>Roteiro</h2>
+                        <p>Roteiristas: <span>Paulo Gustavo</span> e <span>Fil Braz</span></p>
+                        <p>Colaborador do roteiro: <span>Rafael Gradaud</span></p>
+                    </div>
+                    <div class="div-equipe-producao">
+                        <h2>Produção</h2>
+                        <p>Produtor: <span>Iafa Britz</span></p>
+                    </div>
+                    <div class="div-equipe-empresas">
+                        <h2>Empresas envolvidas</h2>
+                        <p>Coprodução: <span>Globo Filmes</span> e <span>Telecine Productions</span></p>
+                        <p>Distribuição: <span>Downtown Filmes</span></p>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
         <div class="div-linha-4">
-            <div>
-                <h1>Onde assistir?</h1>
-            </div>
-            <div class="div-botoes-streamings">
-                <a class="botao-netflix" href="https://www.netflix.com/watch/81380282?source=35"
-                    target="_blank">Netflix</a>
-                <a class="botao-globoplay"
-                    href="https://globoplay.globo.com/minha-mae-e-uma-peca/t/wgdGs5QCHc/?origemId=91698"
-                    target="_blank">Globoplay</a>
-                <a class="botao-amazon-prime"
-                    href="https://www.primevideo.com/dp/amzn1.dv.gti.0240a2f0-4569-4cb9-9248-1dcbb4bd17c9?autoplay=0&ref_=atv_cf_strg_wb"
-                    target="_blank">Amazon Prime</a>
+            <div class="div-carrossel">
+                <div id="imagens" class="div-carrossel-titulo">
+                    <h1>Imagens do filme</h1>
+                </div>
+                <div class="div-carrossel-conteudo">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="project-img">
+                                    <img src="src/img/imagem-carrossel-1.webp" alt="imagem-carrossel-1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-img">
+                                    <img src="src/img/imagem-carrossel-2.webp" alt="imagem-carrossel-2">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-img">
+                                    <img src="src/img/imagem-carrossel-3.webp" alt="imagem-carrossel-3">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-img">
+                                    <img src="src/img/imagem-carrossel-4.webp" alt="imagem-carrossel-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <hr>
-
-    <div class="div-menu">
-        <div class="botao-menu">
-            <!--Corrigir span menu-->
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

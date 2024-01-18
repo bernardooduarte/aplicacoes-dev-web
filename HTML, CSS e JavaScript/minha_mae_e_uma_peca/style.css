@@ -41,6 +41,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5vh;
 }
 
 hr {
@@ -49,8 +50,57 @@ hr {
 
 header>img,
 .div-cartaz>img {
-    width: 200px;
+    width: 250px;
     transition: width 300ms;
+}
+
+.dropbtn {
+    background-color: var(--azul);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+    background-color: rgb(88, 145, 184);
+    transition: 300ms;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    display: block;
+    background-color: var(--amarelo);
+}
+
+.dropdown-content a:hover {
+    background-color: #fcd959;
+    transition: 300ms;
+}
+
+.show {
+    display: block;
 }
 
 main {
@@ -58,7 +108,8 @@ main {
     margin-right: 5vh;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Rex Bold', sans-serif;
     color: white;
 }
@@ -68,10 +119,43 @@ p {
     color: white;
 }
 
-.div-linha-1,
-.div-linha-2 {
+span {
+    font-weight: bold;
+}
+
+.div-linha-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 5vh;
+    background-color: #7ec6bdb2;
+}
+
+
+.div-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.div-titulo-sobre {
+    text-align: center;
+}
+
+.div-conteudo-sobre {
     display: flex;
     flex-direction: row;
+    gap: 6vh;
+}
+
+.div-linha-2 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 5vh;
     margin-top: 3vh;
@@ -86,10 +170,6 @@ p {
     transition: width 300ms;
 }
 
-.div-informacoes>p>span {
-    font-weight: bold;
-}
-
 .div-linha-2 {
     text-align: center;
 }
@@ -98,18 +178,24 @@ p {
     margin-top: 2vh;
 }
 
-.div-titulo-elenco {
+.div-titulo-elenco,
+.div-titulo-equipe {
     justify-content: center;
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
+}
+
+.div-conteudo-elenco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
 }
 
 .linha-1-elenco,
-.linha-2-elenco,
-.linha-3-elenco {
+.linha-2-elenco {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 10vh;
 }
 
@@ -133,7 +219,8 @@ p {
 }
 
 .linha-1-elenco>div>img,
-.linha-2-elenco>div>img {
+.linha-2-elenco>div>img,
+.div-equipe-direcao>img {
     width: 120px;
     transition: width 300ms;
 }
@@ -141,8 +228,9 @@ p {
 header>img:hover,
 .div-cartaz>img:hover,
 .linha-1-elenco>div>img:hover,
-.linha-2-elenco>div>img:hover {
-    width: 240px;
+.linha-2-elenco>div>img:hover,
+.div-equipe-direcao>img:hover {
+    width: 280px;
 }
 
 .div-linha-3,
@@ -158,48 +246,46 @@ header>img:hover,
     text-align: center;
 }
 
-video {
-    width: 500px;
+
+.div-equipe {
+    display: flex;
+    flex-direction: column;
 }
 
-.div-botoes-streamings {
+
+.div-conteudo-equipe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8vh;
+}
+
+.div-equipe-direcao>p {
+    font-weight: bold;
+}
+
+
+.swiper {
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5vh;
 }
 
-a {
-    font-family: 'Open Sans', sans-serif;
-    padding: 3vh;
-    border: none;
-    color: black;
-    text-decoration: none;
-    transition: color 300ms;
-    background-color: var(--amarelo);
-    transition: all 300ms;
+@media (max-width: 450px) {
+    .swiper {
+        height: 270px;
+    }
 }
 
-
-.botao-netflix:hover {
-    background-color: #E50914;
-    color: white;
-    border-radius: 50%;
-    transition: 300ms;
-}
-
-.botao-globoplay:hover {
-    background-color: #fb471c;
-    color: white;
-    border-radius: 50%;
-    transition: 300ms;
-}
-
-.botao-amazon-prime:hover {
-    background-color: #00aae4;
-    color: white;
-    border-radius: 50%;
-    transition: 300ms;
+.project-img>img {
+    box-shadow: 0 1px 2px #0003;
+    width: 50%;
 }
 
 .material-symbols-outlined {

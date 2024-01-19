@@ -1,3 +1,4 @@
+// função do menu dropdown
 function menu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -15,6 +16,8 @@ window.onclick = function (event) {
   }
 };
 
+
+//função do carrossel de imagens
 var swiper = new Swiper(".swiper", {
   cssMode: true,
   loop: true,

@@ -84,7 +84,7 @@ header>img,
 
 /* estilizando os botões do conteúdo do menu */
 
-.dropdown-content {
+.conteudo-dropdown {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -94,7 +94,7 @@ header>img,
     z-index: 1;
 }
 
-.dropdown-content a {
+.conteudo-dropdown a {
     color: black;
     padding: 12px 16px;
     font-family: 'Open Sans', sans-serif;
@@ -103,12 +103,12 @@ header>img,
     background-color: var(--amarelo);
 }
 
-.dropdown-content a:hover {
+.conteudo-dropdown a:hover {
     background-color: #fcd959;
     transition: 300ms;
 }
 
-.show {
+.mostrar {
     display: block;
 }
 
